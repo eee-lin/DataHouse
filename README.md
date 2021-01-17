@@ -21,8 +21,8 @@ npm run lint
 ```
 
 ### Gmail
-MailAddress: datahouse.bowbow@gmail.com
-PW: dogbowbow
+- MailAddress: datahouse.bowbow@gmail.com
+- PW: dogbowbow
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
