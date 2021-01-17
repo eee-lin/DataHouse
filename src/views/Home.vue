@@ -1,29 +1,23 @@
 <template>
   <div class="home">
-    <Carousel />
-    <div class="services">
-      <Grid />
-    </div>
-    <div class="contact"><Contact /></div>
+    <Card />
   </div>
 </template>
 
 <script>
-import Carousel from "@/components/Carousel.vue"
-import Grid from "@/components/Grid.vue"
-import Contact from "@/components/Contact.vue"
+import Card from "@/components/Card_Top.vue"
+// import Grid from "@/components/Grid.vue"
+// import Contact from "@/components/Contact.vue"
 
 export default {
   name: "Home",
-  components: { Carousel, Grid, Contact },
+  components: { Card },
 }
 </script>
 
 <style scoped>
 .home {
   margin: 30px 10%;
-}
-.services {
-  margin: 30px 0;
+  /* background-color: #d7dbde; */
 }
 </style>

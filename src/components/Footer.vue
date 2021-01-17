@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>© LIFE KEY SUPPORT. ALL RIGHTS RESERVED.</p>
+    <p>© Data House. ALL RIGHTS RESERVED.</p>
   </footer>
 </template>
 

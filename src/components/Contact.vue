@@ -6,7 +6,7 @@
           mdi-email
         </v-icon>
       </v-avatar>
-      <span>info@film-key.com</span>
+      <span>info@gmail.com</span>
     </v-col>
 
     <v-col cols="12" sm="12" md="12" lg="12">
@@ -15,7 +15,7 @@
           mdi-phone
         </v-icon>
       </v-avatar>
-      <span>(直通)090-9191-8730 (電話)0120-542-205</span>
+      <span>888-666-888</span>
     </v-col>
   </v-row>
 </template>
