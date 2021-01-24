@@ -10,8 +10,15 @@
         <v-tab><router-link to="/your_pet">Your Pet</router-link></v-tab>
         <v-tab><router-link to="/offerdata">Offer Data</router-link></v-tab>
         <v-tab><router-link to="/reward">Reward</router-link></v-tab>
-        <!-- <v-tab><router-link to="/contact">Contact</router-link></v-tab> -->
       </v-tabs>
+      <v-btn
+        class="ma-2"
+        color="white"
+        outlined
+        @click="logoutUser"
+        v-if="authenticatedUser"
+        >ログアウト
+      </v-btn>
     </v-app-bar>
     <v-navigation-drawer class="drawer" v-model="drawer" fixed temporary>
       <v-list nav dense>
@@ -47,11 +54,31 @@
 </template>
 
 <script>
+import firebase from "../firebase/firebase"
 export default {
   data() {
     return {
+      authenticatedUser: false,
       drawer: false,
     }
+  },
+
+  methods: {
+    /* ログアウト */
+    logoutUser() {
+      firebase.auth().signOut()
+    },
+  },
+  mounted() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log("login")
+        this.authenticatedUser = true
+      } else {
+        console.log("logout")
+        this.authenticatedUser = false
+      }
+    })
   },
 }
 </script>
