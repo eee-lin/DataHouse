@@ -8,7 +8,7 @@
       <v-tabs id="nav">
         <v-tab><router-link to="/">Home</router-link></v-tab>
         <v-tab><router-link to="/your_pet">Your Pet</router-link></v-tab>
-        <v-tab><router-link to="/offerdata">Offer Data</router-link></v-tab>
+        <v-tab><router-link to="/offerdata1">Offer Data</router-link></v-tab>
         <v-tab><router-link to="/reward">Reward</router-link></v-tab>
       </v-tabs>
       <v-btn
@@ -37,7 +37,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-title
-              ><router-link to="/offerdata"
+              ><router-link to="/offerdata1"
                 >Offer Data</router-link
               ></v-list-item-title
             >

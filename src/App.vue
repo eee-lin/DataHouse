@@ -23,14 +23,14 @@
                 placeholder="パスワード"
                 outlined
               />
-              <v-btn color="indigo" class="ma-2 white--text" @click="signupUser"
+              <v-btn color="success" class="ma-2 white--text" @click="signupUser"
                 >サインアップ</v-btn
               >
-              <v-btn color="indigo" class="ma-2 white--text" @click="loginUser"
+              <v-btn color="info" class="ma-2 white--text" @click="loginUser"
                 >ログイン</v-btn
               >
             </v-container>
-          </div>
+          </div> 
         </v-container>
       </v-main>
 

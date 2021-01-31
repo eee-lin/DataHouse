@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <router-link to="/offerdata">
+          <router-link to="/your_pet">
             <v-card color="#385F73" dark>
               <v-layout row justify-center>
                 <v-card-title class="headline">
@@ -18,7 +18,7 @@
           </router-link>
         </v-col>
         <v-col cols="12">
-          <router-link to="/offerdata">
+          <router-link to="/offerdata1">
             <v-card color="#385F73" dark>
               <v-layout row justify-center>
                 <v-card-title class="headline">
@@ -33,7 +33,7 @@
           </router-link>
         </v-col>
         <v-col cols="12">
-          <router-link to="/offerdata">
+          <router-link to="/reward">
             <v-card color="#385F73" dark>
               <v-layout row justify-center>
                 <v-card-title class="headline">
@@ -41,7 +41,7 @@
                 </v-card-title>
 
                 <v-icon dark right>
-                  mdi-gift
+                   mdi-gift 
                 </v-icon>
               </v-layout>
             </v-card>

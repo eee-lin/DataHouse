@@ -1,6 +1,6 @@
 <template>
  <div>
-   <h1>Your Pet</h1>
+   <p>柴犬を選択してください</p>
     <v-card
       class="mx-auto, my-5"
     >
@@ -56,13 +56,12 @@
     class="text-center, my-5"
     >
     <v-btn
-      to="/pochidetail"
+      to="/offerdata4"
       rounded
       color="#556B2F"
       dark
     >
-    <!--<router-link to="/pochidetail">ペットを登録する</router-link>-->
-    ペットを登録する
+    次へ
     </v-btn>
     </div>
 
@@ -75,7 +74,7 @@
     data: () => ({
       items: [
         {
-          color: '#1F7087',
+          color: '#952175',
           src: 'https://pbs.twimg.com/profile_images/1209993799260225536/SSdZ4FG3_400x400.jpg',
           title: 'ぽち',
           age: '8才6ヶ月',
