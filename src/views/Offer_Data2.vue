@@ -1,76 +1,6 @@
 <template>
     <div>
         <v-card
-          class="mx-auto"
-        >
-          <v-list>
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-cash</v-icon>
-              </v-list-item-icon>
-
-              <v-list-item-title>獲得合計ポイント:26,500P</v-list-item-title>
-            </v-list-item>
-
-            <v-list-group
-              :value="true"
-              prepend-icon="mdi-sort"
-            >
-              <template v-slot:activator>
-                <v-list-item-title>並び替え</v-list-item-title>
-              </template>
-
-              <v-list-group
-                :value="true"
-                no-action
-                sub-group
-              >
-                <template v-slot:activator>
-                  <v-list-item-content>
-                    <v-list-item-title>保険会社別</v-list-item-title>
-                  </v-list-item-content>
-                </template>
-
-                <v-list-item
-                  v-for="([title, icon], i) in admins"
-                  :key="i"
-                  link
-                >
-                  <v-list-item-title v-text="title"></v-list-item-title>
-
-                  <v-list-item-icon>
-                    <v-icon v-text="icon"></v-icon>
-                  </v-list-item-icon>
-                </v-list-item>
-              </v-list-group>
-
-              <v-list-group
-                no-action
-                sub-group
-              >
-                <template v-slot:activator>
-                  <v-list-item-content>
-                    <v-list-item-title>ペット別</v-list-item-title>
-                  </v-list-item-content>
-                </template>
-
-                <v-list-item
-                  v-for="([title, icon], i) in cruds"
-                  :key="i"
-                  link
-                >
-                  <v-list-item-title v-text="title"></v-list-item-title>
-
-                  <v-list-item-icon>
-                    <v-icon v-text="icon"></v-icon>
-                  </v-list-item-icon>
-                </v-list-item>
-              </v-list-group>
-            </v-list-group>
-          </v-list>
-        </v-card>
-
-        <v-card
             class="mx-auto my-5"
             max-width="344"
         >
@@ -84,7 +14,7 @@
             </v-card-title>
 
             <v-card-subtitle>
-            獲得済報酬：18,000ポイント
+            獲得可能報酬：2000ポイント
             </v-card-subtitle>
 
             <v-card-actions>
@@ -174,7 +104,7 @@
             </v-card-title>
 
             <v-card-subtitle>
-            獲得済報酬：1,000ポイント
+            獲得可能報酬：1000ポイント
             </v-card-subtitle>
 
             <v-card-actions>
@@ -219,7 +149,7 @@
             </v-card-title>
 
             <v-card-subtitle>
-            獲得済報酬：7,500ポイント
+            獲得可能報酬：500ポイント
             </v-card-subtitle>
 
             <v-card-actions>

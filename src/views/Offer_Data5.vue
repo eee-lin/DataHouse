@@ -1,6 +1,6 @@
 <template>
  <div>
-   <h1>Your Pet</h1>
+   <p>ポチのデータは送信されました。</p>
     <v-card
       class="mx-auto, my-5"
     >
@@ -56,13 +56,12 @@
     class="text-center, my-5"
     >
     <v-btn
-      to="/pochidetail"
+      to="/"
       rounded
       color="#556B2F"
       dark
     >
-    <!--<router-link to="/pochidetail">ペットを登録する</router-link>-->
-    ペットを登録する
+    HOMEへ戻る
     </v-btn>
     </div>
 
@@ -75,23 +74,10 @@
     data: () => ({
       items: [
         {
-          color: '#1F7087',
+          color: '#952175',
           src: 'https://pbs.twimg.com/profile_images/1209993799260225536/SSdZ4FG3_400x400.jpg',
           title: 'ぽち',
           age: '8才6ヶ月',
-        },
-        {
-          color: '#1F7087',
-          src: 'https://www.petfamilyins.co.jp/pns/wp-content/uploads/2019/06/1M-Apidon_shutterstock_628398320-300x200.jpg.webp',
-          title: 'にゃあ',
-          age: '2才9ヶ月',
-        },
-        {
-          color: '#1F7087',
-          src: 'https://d1e3tkalbms7za.cloudfront.net/wp-content/uploads/2015/02/06114657/8c80cbf41ffd3c075939cd923792384b-e1483617235580.jpg',
-          title: 'レオン',
-          age: '1才3ヶ月',
-          //species: 'スコティッシュ・フォールド',
         },
       ],
     }),
